@@ -22,34 +22,6 @@ Install dependencies:
 npm install
 ```
 
-Install Mysql Server using brew(mac) 
-# reference:- https://tableplus.io/blog/2018/11/how-to-download-mysql-mac.html
-
-to install Homebrew, open Terminal and run:
-```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-then install MySQL using Homebrew:
-
-```sh 
-brew install mysql 
-```
-
-start dependent services (mysql)
-```sh
-mysql.server start
-```
-Expected output: Successfully started mysql (label: homebrew.mxcl.mysql);
-
-open Terminal and execute the following command to set the root password:
-```sh
-mysqladmin -u root password 'yourpassword'
-```
-NOTE: for client authentication issue run following command:
-```sh
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
-```
-
 Create db and Run migrations and seeds if needed
 ```sh
 # To run the migrations
@@ -84,7 +56,7 @@ npm run knex seed:run;
 
 - [@babel/preset-env - A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments](https://www.npmjs.com/package/@babel/preset-env)
 
-- [@babel/register - The require hook will bind itself to node's require and automatically compile files on the fly](https://www.npmjs.com/package/@babel/register)
+- [@babel/register - required hook will bind itself to node's require and automatically compile files on the fly](https://www.npmjs.com/package/@babel/register)
 
 - [nodemon - nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected](https://www.npmjs.com/package/nodemon)
 
