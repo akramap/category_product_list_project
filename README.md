@@ -39,6 +39,10 @@ npm run knex seed:run;
 ### API can be accessed at 
 /api/category/
 
+### request
+limit(number)
+skip(number)
+example: http://localhost:3000/api/category?limit=1&skip=1
 
 ### Dependencies
 - [mysql2 - MySQL client for Node.js with focus on performance. Supports prepared statements, non-utf8 encodings, binary log protocol, compression, ssl](https://www.npmjs.com/package/mysql2)
